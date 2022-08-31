@@ -13,6 +13,7 @@ console.log(prod1)
 
 //É possivel criar um objeto dessa forma também
 prod1['Desconto'] = 0.40
+prod1.porcentagem = 0.70
 console.log(prod1)
 
 //E de forma direta
