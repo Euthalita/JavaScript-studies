@@ -26,3 +26,7 @@ console.log(prod2)
 //Para acessar as propriedades de um objeto, há duas formas
 console.log(prod2["nome"])
 console.log(prod2.nome)
+
+//Para deletar valores de um objeto
+delete prod2.nome
+console.log(prod2)
