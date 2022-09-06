@@ -12,7 +12,7 @@ console.log(b)
 b.name = 'Opa'
 console.log(a)
 
-/*Eu consigo alterar o valor do objeto mesmo sendo const, visto que a variavel const está apontando para o endereço de memoria. Quando você aponta uma variável para um objeto, a variável, no caso o 'const a', aponta para o endereço da memoria que se encontra o objeto. Isso significa que você não pode alterar o endereço que essa variável esta apontando, porem você consegue alterar o objeto em si.
+/*Eu consigo alterar o valor do objeto mesmo sendo const, visto que a variavel const está apontando para o endereço de memoria. Quando você aponta uma variável para um objeto, a variável, no caso o 'const a', aponta para o endereço da memoria que se encontra o objeto. Isso significa que você não pode alterar o endereço que essa variável esta apontando, porém você consegue alterar o objeto em si.
 */
 
 /* Aqui você cria um objeto, esse objeto é armazenado em um local na memoria,
@@ -26,3 +26,21 @@ d = {};
 /* Já aqui você consegue alterar o atributo 'nome', porque se trata do atributo do objeto, e não da variável,
 a variável simplesmente aponta pro local onde o objeto está. */
 c.nome = "Maria"; 
+
+const a1 = 7
+let b1 = 3
+
+b1 += a1 // b1 = b1 + a1
+console.log(b1)
+
+b1 -= 4 // b1 = b1 - 4
+console.log(b1)
+
+b1 *= 2 // b1 = b1 * 2
+console.log(b1)
+
+b1 /= 2 // b1 = b1 / 2
+console.log(b1) 
+
+b1 %= 2 // resto da divisão
+console.log(b1)
