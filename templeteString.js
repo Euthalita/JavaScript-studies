@@ -1,5 +1,10 @@
+//É uma outra forma mais fácil e moderna de concatenar
 //Com o template string há a possibilidade de haver quebras de linhas e ele será impresso do mesmo modo da quebra
 //No template, usa-se crase e cifrão para concatenar com uma variável
+
+const firstName = 'Ana'
+const lastName= 'Beatriz'
+console.log(`Meu nome é ${firstName} ${lastName}`)
 
 const nome= 'Raquel'
 const template = ` 
