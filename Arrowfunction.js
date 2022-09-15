@@ -19,3 +19,12 @@ Nesse caso, não é necessário usar o return, ele já vai direto
 */
 const subtracao = (a, b) => a - b
 console.log(subtracao(6, 2))
+
+/*A arrowfunction não possui hoisting. O hoisting é uma propriedade do JS no qual não é necessario criar a variavel antes de utiliza-la em alguma função, etc. O código é lido de cima para baixo, mas quando criado uma variavel com var, ela é jogada para cima, como por exemplo, se for criada após uma função e a função chame esse variavel mesmo que tenha sido criada após, ela é jogada pra cima e funcionará nessa função.
+    No caso da arrow, não há essa possibilidade, por isso é necessario criar a variavel antes, ou usar uma função normal
+    Veja o exemplo abaixo: */
+console.log (ex1)//Aparece undefined, mas não gera erro
+var ex1 = 'Hello World' //No caso de outra linguagem, não funcionaria
+
+console.log(mult(2, 6)) //Erro
+var mult = (c, d) => c * d
