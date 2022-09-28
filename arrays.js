@@ -26,7 +26,18 @@ console.log(valores.pop())
 delete valores[0]
 console.log(valores)
 
+//Para encontrar um valor dentro do vetor, será retornado o indice em que o valor está, caso não haja o valor, será retornado o -1
+console.log(valores.indexOf(3))
+console.log(valores.indexOf(8.1))
+
 //Um array é do tipo object(objeto)
 console.log(typeof valores)
 
 //O ideal é possuir um array para cada tipo de dado, para o código ficar mais limpo e organizado, como por exemplo, guardar os nomes dos clientes em um array, os produtos em outro, etc
+
+//Forma de percorrer um array
+let num = [2,9,4,6,1]
+
+for(let i in num){
+    console.log(`O valor ${num[i]} está na posição ${i}`)
+}
